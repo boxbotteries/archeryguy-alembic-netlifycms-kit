@@ -21,12 +21,12 @@ plugins:
 - jemoji
 
 # Site settings
-url: 'https://mydomain.com'
+url: 'https://archery-guy-alembic.netlify.app/'
 baseurl: ''
-title: 'My website'
+title: 'ArcheryGuy.com'
 description: 'This is my new website'
 permalink: pretty
-logo: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c?s=52"
+logo: "https://archeryguy.com/images/logo.gif"
 
 # Pagination
 paginate: 5
@@ -36,6 +36,13 @@ paginate_path: blog/page:num
 navigation_header:
 - title: Home
   url: /
+- title: Collections
+  url: /collections/
+  subfolderitems:
+    - page: Bows
+      url: /collections/bows/
+    - page: Hats
+      url: /collections/hats/
 - title: About
   url: /about/
 - title: Blog
@@ -51,9 +58,9 @@ collections:
   posts:
     title: Posts
     output: true
-    description: "My thoughts and ideas"
+    description: "Recent news from Archery Guy"
     feature_text: |
-      Welcome to my blog
+      # Blog
     feature_image: "https://picsum.photos/2560/600?image=866"
 
 # Collection settings
